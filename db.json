@@ -1,19 +1,37 @@
 {
-    "productos": [
-        {
-            "id": 1,
-            "producto": "producto1",
-            "descripcion": "descripcion1"
-        },
-        {
-            "id": 2,
-            "producto": "producto2",
-            "descripcion": "descripcion2"
-        },
-        {
-            "id": 3,
-            "producto": "producto3",
-            "descripcion": "descripcion3"
-        }
-    ]
+  "products": [
+    {
+      "id": "1",
+      "name": "Laptop",
+      "price": 300,
+      "description": "High performance laptop"
+    },
+    {
+      "id": "2",
+      "name": "Smartphone",
+      "price": 200,
+      "description": "Latest model smartphone",
+      "stock": 15
+    },
+    {
+      "id": "3",
+      "name": "Headphones",
+      "price": 100,
+      "description": "Wireless headphones"
+    }
+  ],
+  "cart": [
+    {
+      "id": 1730331702657,
+      "productId": "3",
+      "name": "Headphones",
+      "price": 100
+    },
+    {
+      "id": 1730331708225,
+      "productId": "2",
+      "name": "Smartphone",
+      "price": 200
+    }
+  ]
 }
