@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../../services/product.service';
 import { CartService } from '../../services/cart.service';
 import { Product } from '../../product';
+import { CartItem } from '../../cart-item';
 import { NgFor } from '@angular/common';
 
 @Component({
@@ -32,14 +33,11 @@ export class ProductListComponent implements OnInit {
 
   addToCart(product: Product): void {
     const cartItem = {
-      id: Date.now(),
-      productId: product.id,
-      name: product.name,
-      price: product.price
+      id: product.id,
+      nombre: product.nombre,
+      precio: product.precio
     };
-    
     this.cartService.addToCart(cartItem).subscribe(() => {
-      console.log('Product added to cart');
     });
   }
 }

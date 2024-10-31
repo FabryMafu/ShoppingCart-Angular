@@ -1,6 +1,5 @@
-export interface Product {
+export interface CartItem {
   id: number;
   nombre: string;
   precio: number;
-  descripcion: string;
 }
